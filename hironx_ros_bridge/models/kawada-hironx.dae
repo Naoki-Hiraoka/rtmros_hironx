@@ -2858,6 +2858,7 @@ available at http://www.eclipse.org/legal/epl-v10.html
 				<instance_rigid_body body="rigid21" target="#v1.node21"/>
 				<instance_rigid_body body="rigid22" target="#v1.node22"/>
 				<instance_rigid_body body="rigid23" target="#v1.node23"/>
+				<instance_rigid_constraint constraint="rigid_constraint0"/>
 			</instance_physics_model>
 		</physics_scene>
 	</library_physics_scenes>
@@ -3840,6 +3841,10 @@ available at http://www.eclipse.org/legal/epl-v10.html
 					</shape>
 				</technique_common>
 			</rigid_body>
+			<rigid_constraint sid="rigid_constraint0" name="WAIST">
+				<ref_attachment rigid_body="#visual1"/>
+				<attachment rigid_body="#rigid0"/>
+			</rigid_constraint>
 		</physics_model>
 	</library_physics_models>
 	<scene>
